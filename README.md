@@ -1,11 +1,11 @@
 # Server Replay Helper
 
 [![MCDR](https://img.shields.io/badge/MCDR-%3E%3D2.0.0--alpha.1-blue)](https://github.com/Fallen-Breath/MCDReforged)
-[![License](https://img.shields.io/github/license/Rethink_QAQ/ServerReplayHelper)](LICENSE)
+[![License](https://img.shields.io/github/license/RethinkQAQ/ServerReplayHelper)](LICENSE)
 
 [English](README_EN.md) | [中文](README_CN.md)
 
-An MCDR plugin that can easily control the [ServerReplay](https://modrinth.com/mod/server-replay) mod. Must be used with the [ServerReplay](https://modrinth.com/mod/server-replay) mod.
+An MCDR plugin that can easily control the [ServerReplay](https://modrinth.com/mod/server-replay) mod. Must be used with the ServerReplay mod.
 
 ## Command Reference
 

@@ -1,11 +1,11 @@
 # Server Replay Helper
 
 [![MCDR](https://img.shields.io/badge/MCDR-%3E%3D2.0.0--alpha.1-blue)](https://github.com/Fallen-Breath/MCDReforged)
-[![License](https://img.shields.io/github/license/Rethink_QAQ/ServerReplayHelper)](LICENSE)
+[![License](https://img.shields.io/github/license/RethinkQAQ/ServerReplayHelper)](LICENSE)
 
 [English](README.md) | [中文](README_CN.md)
 
-一个可以便捷控制 [ServerReplay](https://modrinth.com/mod/server-replay) 模组的 MCDR 插件。 务必搭配 [ServerReplay](https://modrinth.com/mod/server-replay) 模组。
+一个可以便捷控制 [ServerReplay](https://modrinth.com/mod/server-replay) 模组的 MCDR 插件。 务必搭配 ServerReplay 模组。
 
 ## 命令说明
 
