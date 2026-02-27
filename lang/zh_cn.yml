@@ -1,0 +1,35 @@
+server_replay_helper:
+  help_msg: 快速且便捷地控制 ServerReplay 模组!
+
+  # command help message
+  help:
+    replay: |
+      ------ ServerReplayHelper ------
+      一个可以快速便捷操作 ServerReplay 模组的插件
+      §b『命令提示』
+      §a !!replay list: §r§f 列出正在录制的 replay
+      §a !!replay start §r§2[<id>]: §r§f 开始录制自己或者其他玩家
+      §a !!replay stop §r§2[<id>]: §r§f 停止录制自己或者其他玩家
+      §a !!replay pause §r§2[<id>]: §r§f 暂停录制自己或者其他玩家
+      §a !!replay chunk start <radius> <name>: §r§f 录制半径<radius>区块的区块录制
+
+  list:
+    .: §b 『录制列表』
+    mode:
+      replay: §d[replay]§r
+      flashback: §e[flashback]§r
+    type:
+      players: §7[玩家]§r
+      chunks: §7[区块]§r
+    no_recordings: §c没有正在录制的 replay
+
+  action:
+    stop: 停止录制
+
+  permission:
+    .: §c你没有权限执行此命令
+    replay_other: §c你没有权限控制其他玩家的录制
+    not_player: §c只有玩家才能执行此命令
+
+  command:
+    execute: 命令已执行

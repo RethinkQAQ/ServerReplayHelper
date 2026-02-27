@@ -1,0 +1,18 @@
+{
+    "id": "server_replay_helper",
+    "version": "1.0.0",
+    "name": "Server Replay Helper",
+    "description": {
+        "en_us": "A plugin can control ServerReplay Mod easier",
+        "zh_cn": "一个可以便捷控制 ServerReplay 模组的插件"
+    },
+    "author": "Rethink_QAQ",
+    "dependencies": {
+        "mcdreforged": ">=2.0.0-alpha.1",
+        "minecraft_data_api": "*"
+    },
+    "entrypoint": "server_replay_helper.entry",
+    "resources": [
+        "lang"
+    ]
+}
