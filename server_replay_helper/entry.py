@@ -2,7 +2,7 @@ from mcdreforged import PluginServerInterface, SimpleCommandBuilder, CommandSour
     QuotableText, new_thread, PlayerCommandSource, Integer
 
 from server_replay_helper.config import Config
-from server_replay_helper.utils import tr, RecordingManager, get_chunk_coords, get_dim_key
+from server_replay_helper.utils import tr, RecordingManager, get_chunk_coords, get_dim_key, help_dict, help_message
 
 server_inst: PluginServerInterface
 config = Config()
@@ -28,6 +28,10 @@ def print_replay_message(source: CommandSource):
     load_recording_list()
     source.reply(tr("help.replay"))
     print_replay_list(source)
+
+def print_help(source: CommandSource):
+    for key in help_dict.keys():
+        source.reply(help_message("!!" + config.prefixes[0], key))
 
 def print_replay_list(source: CommandSource, top: int = 3):
     recordings = replay_manager.get_top_recordings(top)
@@ -100,7 +104,11 @@ def register_command(server: PluginServerInterface):
 
         builder.command(f"!!{prefix}", lambda src: print_replay_message(src))
 
-        builder.command(f"!!{prefix} help", lambda src: print_replay_message(src))
+        builder.arg("key", QuotableText)
+        builder.command(f"!!{prefix} help", lambda src: print_help(src))
+        builder.command(f"!!{prefix} help <key>", lambda src, ctx: src.reply(help_message(f"!!{prefix}", ctx["key"])))
+
+        builder.command(f"!!{prefix} list", lambda src: print_replay_list(src, 10))
 
         # !!replay start|stop [<player>]   start or stop recording self or other player
         builder.arg("player", QuotableText)

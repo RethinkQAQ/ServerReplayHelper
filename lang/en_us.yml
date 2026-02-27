@@ -13,6 +13,13 @@ server_replay_helper:
       §a !!replay pause §r§2[<id>]: §r§f Pause recording yourself or other players
       §a !!replay chunk start <radius> <name>: §r§f Record chunks within <radius> blocks
 
+    hover: Click to run the command
+    list: Display recording list
+    start: Start recording yourself or other players
+    stop: Stop recording yourself or other players
+    chunk start: Record chunks within <radius> blocks
+    chunk stop: Stop recording
+
   list:
     .: §b 『Recording List』
     mode:

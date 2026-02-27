@@ -13,6 +13,13 @@ server_replay_helper:
       §a !!replay pause §r§2[<id>]: §r§f 暂停录制自己或者其他玩家
       §a !!replay chunk start <radius> <name>: §r§f 录制半径<radius>区块的区块录制
 
+    hover: 点击执行命令
+    list: 显示录制列表
+    start: 开始自己或者其他玩家的录制
+    stop: 停止自己或者其他玩家的录制
+    chunk start: 录制半径<radius>区块的区块录制
+    chunk stop: 停止录制
+
   list:
     .: §b 『录制列表』
     mode:

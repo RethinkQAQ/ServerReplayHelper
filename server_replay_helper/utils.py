@@ -8,12 +8,9 @@ from mcdreforged import RTextMCDRTranslation, ServerInterface, RTextList, RText,
 help_dict = {
     "list": "[<pageNum>]",
     "start": "[<ID>]",
-    "pause": "[<ID>]",
     "stop": "[<ID>]",
-    "cut": "[<ID>]",
     "chunk start": "<radius> <name>",
     "chunk stop": "<name>",
-    "chunk cut": "<name>"
 }
 
 class Recording:
@@ -27,7 +24,7 @@ def tr(key: str, *args, **kwargs) -> RTextMCDRTranslation:
 
 
 def help_message(command: str, key: str):
-    return RTextList(RText(f"§7{command} {key} {help_dict[key]}").c(RAction.suggest_command, f"{command} {key}"), " ",
+    return RTextList(RText(f"§7{command} {key} {help_dict[key]}").c(RAction.suggest_command, f"{command} {key}").h(tr("help.hover")), " ",
                      tr(f"help.{key}"))
 
 
