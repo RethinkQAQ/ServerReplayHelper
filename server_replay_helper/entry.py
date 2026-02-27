@@ -27,6 +27,7 @@ def load_recording_list():
 def print_replay_message(source: CommandSource):
     load_recording_list()
     source.reply(tr("help.replay"))
+    print_help(source)
     print_replay_list(source)
 
 def print_help(source: CommandSource):

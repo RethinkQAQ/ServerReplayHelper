@@ -4,14 +4,9 @@ server_replay_helper:
   # command help message
   help:
     replay: |
-      ------ ServerReplayHelper ------
+      ------ §lServerReplayHelper§r ------
       A plugin that can quickly and easily operate the ServerReplay mod
       §b『Command Help』
-      §a !!replay list: §r§f List currently recording replays
-      §a !!replay start §r§2[<id>]: §r§f Start recording yourself or other players
-      §a !!replay stop §r§2[<id>]: §r§f Stop recording yourself or other players
-      §a !!replay pause §r§2[<id>]: §r§f Pause recording yourself or other players
-      §a !!replay chunk start <radius> <name>: §r§f Record chunks within <radius> blocks
 
     hover: Click to run the command
     list: Display recording list

@@ -4,14 +4,9 @@ server_replay_helper:
   # command help message
   help:
     replay: |
-      ------ ServerReplayHelper ------
+      ------ §lServerReplayHelper§r ------
       一个可以快速便捷操作 ServerReplay 模组的插件
       §b『命令提示』
-      §a !!replay list: §r§f 列出正在录制的 replay
-      §a !!replay start §r§2[<id>]: §r§f 开始录制自己或者其他玩家
-      §a !!replay stop §r§2[<id>]: §r§f 停止录制自己或者其他玩家
-      §a !!replay pause §r§2[<id>]: §r§f 暂停录制自己或者其他玩家
-      §a !!replay chunk start <radius> <name>: §r§f 录制半径<radius>区块的区块录制
 
     hover: 点击执行命令
     list: 显示录制列表
